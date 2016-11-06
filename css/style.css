@@ -1,0 +1,14 @@
+div.topbar
+{
+    background-color: deepskyblue;
+    height: 14vh;
+    width: 100vw; 
+}
+body {
+    margin: 0; !
+}
+
+.logo {
+    height: 14vh;
+    margin-left: 1.1vh;
+}
