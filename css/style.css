@@ -1,14 +1,55 @@
-div.topbar
+.topbar
 {
     background-color: deepskyblue;
     height: 14vh;
     width: 100vw; 
 }
 body {
-    margin: 0; !
+    margin: 0 !important; 
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 .logo {
     height: 14vh;
     margin-left: 1.1vh;
+    float: left;
+}
+
+.R_topbar {
+    float: right;
+    height: 14vh;
+}
+
+ul {
+    float:left;
+    height: 14vh;
+    margin: 0;
+}
+
+li {
+    float: left;
+}
+
+.menu {
+    display: block;
+    width: 23vw;
+    height: 14vh;
+    margin-right: 1vw;   
+    background-color: rgba(250,250,250,0.4);
+    text-align: center;
+    line-height: 14vh;
+    font-weight: 700;
+    font-size: 4.2vh;
+    transition: background-color 0.5s;
+}
+
+.menu:last-child{
+    margin: 0;
+}
+
+.menu:hover {
+    
+    background-color: rgba(255,255,255,0.6);
+    transition: background-color 0.5s;
 }
