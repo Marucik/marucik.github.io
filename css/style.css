@@ -1,30 +1,29 @@
 nav
 {
-    background-color: deepskyblue;
-    height: 14vh;
+    background-color: #044399;
+    height: 12vh;
     width: 100vw; 
 }
 body {
     margin: 0 !important; 
     font-family: 'Open Sans', sans-serif;
-    color: white;
-    background-color: darkgrey;
+    color: white;    
 }
 
 .logo {
-    height: 14vh;
+    height: 12vh;
     margin-left: 1.1vh;
     float: left;
 }
 
 .R_topbar {
     float: right;
-    height: 14vh;
+    height: 12vh;
 }
 
 ul.nav {
     float:left;
-    height: 14vh;
+    height: 12vh;
     margin: 0;
     padding: 0;
 }
@@ -36,11 +35,11 @@ li {
 .menu {
     display: block;
     width: 18vw;
-    height: 14vh;
+    height: 12vh;
     margin-right: 1vw;   
-    background-color: rgba(250,250,250,0.4);
+    background-color: rgba(255,255,255,0.050);
     text-align: center;
-    line-height: 14vh;
+    line-height: 12vh;
     font-weight: 700;
     font-size: 3.2vw;
     transition: background-color 0.5s;
@@ -52,12 +51,36 @@ li {
 
 .menu:hover {
     
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.2);
     transition: background-color 0.5s;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .nav {
         display: none !important;
     }
+}
+
+@media screen and (min-width: 600px) {
+    .nav_drop {
+        display: none !important;
+    }
+}
+.nav_drop {
+    height: 12vh;
+    width: 14vh;
+    margin-right: 6vw;
+    background-color: rgba(250,250,250,0.4);
+    text-align: center;
+}
+
+.bg {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+img.nav_button {
+    height: 12vh;
+    
 }
