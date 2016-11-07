@@ -1,4 +1,4 @@
-.topbar
+nav
 {
     background-color: deepskyblue;
     height: 14vh;
@@ -21,7 +21,7 @@ body {
     height: 14vh;
 }
 
-ul {
+ul.nav {
     float:left;
     height: 14vh;
     margin: 0;
@@ -40,7 +40,7 @@ li {
     text-align: center;
     line-height: 14vh;
     font-weight: 700;
-    font-size: 4.2vh;
+    font-size: 3.2vw;
     transition: background-color 0.5s;
 }
 
@@ -52,4 +52,10 @@ li {
     
     background-color: rgba(255,255,255,0.6);
     transition: background-color 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        display: none !important;
+    }
 }
