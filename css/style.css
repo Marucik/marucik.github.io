@@ -67,7 +67,7 @@ li {
 }
 
 
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 1024px) {
     .nav {
         display: none !important;
     }
@@ -75,7 +75,7 @@ li {
 
 /*-----------------------HEADER MOBILE-----------------------*/
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1025px) {
     .nav_drop {
         display: none !important;
     }
