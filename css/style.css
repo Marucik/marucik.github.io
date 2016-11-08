@@ -107,7 +107,7 @@ img.nav_button {
 }
 
 .drop-content{
-    display: none ;
+    display: none;
     background-color: #044399;
     margin: 0;
     width: 40vw;
@@ -122,7 +122,7 @@ img.nav_button {
     display: block;
     color: white;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 5vh;
     height: 10vh;
     line-height: 10vh;
 }
