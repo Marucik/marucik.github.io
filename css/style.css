@@ -1,13 +1,14 @@
+body {
+    margin: 0 !important; 
+    font-family: 'Open Sans', sans-serif;
+    color: white;    
+}
+/*-----------------------HEADER PC-----------------------*/
 nav
 {
     background-color: #044399;
     height: 12vh;
     width: 100vw; 
-}
-body {
-    margin: 0 !important; 
-    font-family: 'Open Sans', sans-serif;
-    color: white;    
 }
 
 .logo {
@@ -55,32 +56,83 @@ li {
     transition: background-color 0.5s;
 }
 
-@media screen and (max-width: 600px) {
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media screen and (max-width: 549px) {
     .nav {
         display: none !important;
     }
 }
 
-@media screen and (min-width: 600px) {
+/*-----------------------HEADER MOBILE-----------------------*/
+
+@media screen and (min-width: 550px) {
     .nav_drop {
         display: none !important;
     }
 }
+
 .nav_drop {
     height: 12vh;
     width: 14vh;
     margin-right: 6vw;
-    background-color: rgba(250,250,250,0.4);
+    background-color: rgba(250,250,250,0.0.050);
     text-align: center;
+    transition: background-color 0.5s;
+    display: block;
+    position: relative;
+    align-content: center;
 }
 
-.bg {
-    background-color: aliceblue;
-    width: 100%;
-    height: 100%;
+.nav_drop:hover {
+    background-color: rgba(250,250,250,0.2);
+    transition: background-color 0.5s;
 }
 
 img.nav_button {
     height: 12vh;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drop-content{
+    display: none;
+    background-color: #044399;
+    margin: 0;
+    width: 30vw;
+    float: right;
     
 }
+
+.drop-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 3.2vw;
+}
+
+.drop-content a:hover{
+    background-color: rgba(250,250,250,0.2);
+    transition: background-color 0.5s;
+}
+
+.nav_drop:hover .drop-content {
+    display: block;
+}
+
+/*----------------------- CONTENT -----------------------*/
+
