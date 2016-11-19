@@ -68,9 +68,7 @@ main>div{
     box-sizing: border-box;
     padding: 25px;
 }
-#content_header {
-    text-align: center;
-}
+
 
 table {
     text-align: center;
@@ -82,10 +80,6 @@ table {
     width: 50%;
     box-sizing: border-box;
     padding: 30px;
-}
-
-#text_input {
-    height: 100px;
 }
 
 #kontakt {
@@ -108,4 +102,19 @@ table {
 
 #return:visited{
     color: black;
+}
+
+#dzialalnosc>div{
+    float: left;
+    width: 50%;
+}
+
+#img_dz{
+    height: 270px;
+    float: right;
+    margin-right: 80px;
+}
+
+textarea{
+    resize: none;
 }
