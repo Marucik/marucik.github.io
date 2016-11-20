@@ -14,17 +14,22 @@ nav
     -webkit-box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
     box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    min-height: 50px;
 }
 
 .logo {
     height: 12vh;
     margin-left: 1.1vh;
     float: left;
+    min-height: 50px;
 }
 
 .R_topbar {
     float: right;
     height: 12vh;
+    min-height: 50px;
 }
 
 ul.nav {
@@ -32,10 +37,12 @@ ul.nav {
     height: 12vh;
     margin: 0;
     padding: 0;
+    min-height: 50px;
 }
 
 li {
-    float: left;
+    float: left;   
+    min-height: 50px;
 }
 
 .menu {
@@ -45,10 +52,10 @@ li {
     margin-right: 1vw;   
     background-color: rgba(255,255,255,0.050);
     text-align: center;
-    line-height: 12vh;
     font-weight: 700;
     font-size: 3.2vw;
     transition: background-color 0.5s;
+    min-height: 50px;
 }
 
 .menu:last-child{
@@ -64,6 +71,7 @@ li {
 .menu a {
     text-decoration: none;
     color: inherit;
+    vertical-align: middle;
 }
 
 .menu a:visited{
