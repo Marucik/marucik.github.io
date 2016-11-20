@@ -9,53 +9,48 @@ body {
 nav
 {
     background-color: #044399;
-    height: 12vh;
+    height: 76px;
     width: 100vw;
-    -webkit-box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
-    box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
-    position: fixed;
-    top: 0;
-    min-height: 50px;
+    -webkit-box-shadow: 1px -1px 26px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 26px 9px rgba(0,0,0,0.75);
+    box-shadow: 1px -1px 26px 9px rgba(0,0,0,0.75);
 }
 
 .logo {
-    height: 12vh;
-    margin-left: 1.1vh;
+    height: 76px;
+    margin-left: 10px;
     float: left;
-    min-height: 50px;
 }
 
 .R_topbar {
     float: right;
-    height: 12vh;
+    height: 76px;
     min-height: 50px;
 }
 
 ul.nav {
     float:left;
-    height: 12vh;
+    height: 76px;
     margin: 0;
     padding: 0;
     min-height: 50px;
 }
 
 li {
-    float: left;   
-    min-height: 50px;
+    float: left;
 }
 
 .menu {
     display: block;
     width: 18vw;
-    height: 12vh;
+    height: 76px;
     margin-right: 1vw;   
     background-color: rgba(255,255,255,0.050);
     text-align: center;
     font-weight: 700;
     font-size: 3.2vw;
+    line-height: 76px;
     transition: background-color 0.5s;
-    min-height: 50px;
 }
 
 .menu:last-child{
@@ -71,7 +66,6 @@ li {
 .menu a {
     text-decoration: none;
     color: inherit;
-    vertical-align: middle;
 }
 
 .menu a:visited{
@@ -95,7 +89,7 @@ li {
 }
 
 .nav_drop {
-    height: 12vh;
+    height: 76px;
     width: 14vh;
     margin-right: 6vw;
     background-color: rgba(250,250,250,0.0.050);
@@ -112,7 +106,7 @@ li {
 }
 
 img.nav_button {
-    height: 12vh;
+    height: 76px;
     position: relative;
     display: block;
     margin-left: auto;
@@ -136,8 +130,8 @@ img.nav_button {
     color: white;
     font-weight: 700;
     font-size: 5vh;
-    height: 10vh;
-    line-height: 10vh;
+    height: 60px;
+    line-height: 60px;
 }
 
 .drop-content a:hover{
@@ -151,3 +145,32 @@ img.nav_button {
 
 /*----------------------- CONTENT -----------------------*/
 
+
+.container{
+    width: 90vw;
+    box-sizing: border-box;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.75);
+}
+
+#content_L{
+    float:left;
+    width:50%;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#content_R{
+    float:left;
+    width:50%;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+}
