@@ -1,14 +1,19 @@
 body {
     margin: 0 !important; 
     font-family: 'Open Sans', sans-serif;
-    color: white;    
+    color: white;
+    /* Background pattern from subtlepatterns.com */
+    background-image: url(../img/bg.png);
 }
 /*-----------------------HEADER PC-----------------------*/
 nav
 {
     background-color: #044399;
     height: 12vh;
-    width: 100vw; 
+    width: 100vw;
+    -webkit-box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
+    box-shadow: 1px -1px 28px 7px rgba(0,0,0,0.75);
 }
 
 .logo {
