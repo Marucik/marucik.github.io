@@ -13,7 +13,7 @@ body {
 nav
 {
     background-color: #044399;
-    height: 76px;
+    height: 86px;
     width: 100%;
     -webkit-box-shadow: 1px -1px 26px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px -1px 26px 9px rgba(0,0,0,0.75);
@@ -21,20 +21,20 @@ nav
 }
 
 .logo {
-    height: 76px;
+    height: 86px;
     margin-left: 10px;
     float: left;
 }
 
 .R_topbar {
     float: right;
-    height: 76px;
+    height: 86px;
     min-height: 50px;
 }
 
 ul.nav {
     float:left;
-    height: 76px;
+    height: 86px;
     margin: 0;
     padding: 0;
     min-height: 50px;
@@ -47,13 +47,13 @@ li {
 .menu {
     display: block;
     width: 18vw;
-    height: 76px;
+    height: 86px;
     margin-right: 1vw;   
     background-color: rgba(255,255,255,0.050);
     text-align: center;
     font-weight: 700;
     font-size: 3.2vw;
-    line-height: 76px;
+    line-height: 80px;
     transition: background-color 0.5s;
 }
 
@@ -86,7 +86,12 @@ li {
         float: none !important;
         width: 100% !important;
     }
-    
+    nav{
+      height: 120px;  
+    }
+    .logo{
+        height:  120px;
+    }
 }
 
 /*-----------------------HEADER MOBILE-----------------------*/
@@ -99,8 +104,8 @@ li {
 }
 
 .nav_drop {
-    height: 76px;
-    width: 76px;
+    height: 120px;
+    width: 120px;
     margin-right: 6vw;
     background-color: rgba(250,250,250,0.0.050);
     text-align: center;
@@ -116,7 +121,7 @@ li {
 }
 
 img.nav_button {
-    height: 76px;
+    height: 120px;
     position: relative;
     display: block;
     margin-left: auto;
@@ -139,8 +144,8 @@ img.nav_button {
     display: block;
     color: white;
     font-weight: 700;
-    font-size: 33px;
-    height: 60px;
+    font-size: 46px;
+    height: 75px;
     line-height: 60px;
 }
 
