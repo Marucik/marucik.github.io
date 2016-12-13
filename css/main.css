@@ -1,0 +1,185 @@
+body{
+    margin: 0 !important;
+    background: rgba(0,21,255,1);
+    background: -moz-linear-gradient(top, rgb(118, 171, 255) 0%, rgba(255,255,255,0.37) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(118, 171, 255)), color-stop(100%, rgba(255,255,255,0.37)));
+    background: -webkit-linear-gradient(top, rgb(118, 171, 255) 0%, rgba(255,255,255,0.37) 100%);
+    background: -o-linear-gradient(top, rgb(118, 171, 255) 0%, rgba(255,255,255,0.37) 100%);
+    background: -ms-linear-gradient(top, rgb(118, 171, 255) 0%, rgba(255,255,255,0.37) 100%);
+    background: linear-gradient(to bottom, rgb(118, 171, 255) 0%, rgba(255,255,255,0.37) 100%);
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;    
+}
+
+/*_________________________  NAV  _________________________*/
+
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.header img{
+    height:79px;
+    transition: transform 0.5s;
+}
+
+
+
+.header img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.nav{    
+    list-style: none;
+    margin: 0;
+    font-size: 25px;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav li{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    margin-right: 1.5em;
+    margin-top: 1px;
+    width: 200px;
+    text-align: center;    
+    font-weight: 700; 
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    vertical-align: middle;
+    cursor: default;
+}
+
+.nav li::before, .nav li::after{
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+}
+
+.draw {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #60daaa;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+.meet:hover {
+  color: #000000;
+}
+.meet::after {
+  top: 0;
+  left: 0;
+}
+.meet:hover::before {
+  border-top-color: #000000;
+  border-right-color: #000000;
+}
+.meet:hover::after {
+  border-bottom-color: #000000;
+  border-left-color: #000000;
+  -webkit-transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}
+
+@media screen and (max-width: 850px){
+    img{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .nav{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 1px;
+        box-sizing: border-box;
+        font-size: 2em;
+    }
+    
+    .nav li{
+        width: 100%;
+        padding: 0.5em;
+    }
+}
+
+/*________________________  MAIN  ________________________*/
+
+@media screen and (max-width: 1200px){
+    main{
+        flex-direction: column;
+        max-width: 100%;
+        text-align: justify;
+    }
+    
+}
+
+main{
+    display: flex;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 1200px;
+    
+}
+
+main div{
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
