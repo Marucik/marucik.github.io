@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+/*    overflow: hidden;*/
+    font-family: 'Oswald', sans-serif;
+}
+
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav div{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 1em;
+    padding: 0.2em;
+    justify-content: center;
+    line-height: 100px;
+    color: white;
+    z-index: 0;
+    font-size: 2em;
+    transition: transform 0.5s;
+}
+
+nav div:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+main{
+    display: flex;
+    margin-left:170px; 
+    margin-right:170px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    font-size: 19px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
