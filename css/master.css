@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.topBar img {
+  height: 100px;
+  width: 100px;
+  align-self: flex-start;
+  background-color: black;
+}
+.topBar nav {
+  align-self: flex-end;
+}
+.topBar nav ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+.topBar nav ul li {
+  margin-left: 10px;
+  display: block;
+  height: 100px;
+  width: 200px;
+  background-color: lightgrey;
+}
