@@ -1,0 +1,55 @@
+
+.greating {
+    padding-bottom: 3rem;
+}
+
+.tilesWraper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tile {
+    padding: 0;
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, white 50%, transparent 50%);
+    -webkit-transition: background-position 300ms, color 300ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease;
+    -o-transition: background-position 300ms, color 300ms ease;
+    transition: background-position 300ms, color 300ms ease;
+
+}
+
+.tile:hover {
+    color: black;
+    background-image: 
+    linear-gradient(to top, white 51%, transparent 50%);
+    background-position: 0 100%;
+    cursor: pointer;
+}
+
+.tile > a {
+    display: block;
+    padding: 2.5rem;
+    min-width: 200px;
+    width: 100%;
+    height: 100%;
+    color: white;    
+    text-decoration: none;
+    -webkit-transition: color 600ms ease;
+    -moz-transition: color 600ms ease;
+    -ms-transition: color 600ms ease;
+    -o-transition: color 600ms ease;
+    transition: color 600ms ease;
+}
+
+.tile:hover > a {
+    color: black;
+}

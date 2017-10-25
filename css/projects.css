@@ -1,0 +1,57 @@
+.topBar a i {
+    visibility: visible;
+}
+
+.content {
+    margin: 80px 0;
+}
+
+.projectsWraper {
+    display: flex;
+    flex-flow: column;
+    padding: 0 3rem;
+}
+
+.projectsWraper > ul {
+    list-style-type: none;
+}
+
+.projectsWraper  ul > li {
+    margin-bottom: 1rem;
+}
+
+.projectsWraper  ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.item {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item > h3 {
+    font-size: 30px;
+}
+
+.item > p {
+    font-size: 20px;
+}
+
+.item > a {
+    color: white;
+}
+
+i {
+    -webkit-transition: color 300ms ease;
+    -moz-transition: color 300ms ease;
+    transition: color 300ms ease;
+}
+
+i:hover {
+    -webkit-transition: color 300ms ease;
+    -moz-transition: color 300ms ease;
+    transition: color 300ms ease;
+    color: #a9a9a9;
+}
