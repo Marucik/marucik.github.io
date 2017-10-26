@@ -1,0 +1,11 @@
+.topBar a i {
+    visibility: visible;
+}
+
+ul span {
+    font-weight: 700;
+}
+
+ul > li {
+    font-size: 26px;
+}

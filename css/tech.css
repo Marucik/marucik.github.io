@@ -1,3 +1,7 @@
+.topBar a i {
+    visibility: visible;
+}
+
 .tableWrapper {
     display: flex;
     flex-flow: row;

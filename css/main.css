@@ -7,6 +7,15 @@ body {
     overflow-y: scroll;
 }
 
+ul {
+    list-style-image: url(../img/listBullet.svg);
+}
+
+ul > li {
+    text-align: left;
+    padding: .5rem 0;
+}
+
 .center {
     margin: 0 auto;
 }
@@ -67,6 +76,15 @@ body {
 
 .content  h2 {
     font-size: 60px; 
+}
+
+.credits {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    color: rgba(122, 122, 122, 0.548);
+    padding: .25rem;
+    /* font-weight: 700; */
 }
 
 ::-webkit-scrollbar-track
