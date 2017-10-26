@@ -21,20 +21,22 @@ $('document').ready(() => {
             });
             var $descr = $('<p>', {
                 text: el.description
-            })
-            var $link = $('<a href="' + el.link + '" target="_blank">', {
-                                
-            })
-            var $icon = ('<i aria-hidden="true">', {
-                class: 'fa fa-github-square fa-5x'                
-            })
+            });
+            var $link = $('<a href="' + el.link + '" target="_blank">');
+            var $icon = ('<i class="fa fa-github-square fa-5x" aria-hidden="true"></i>');
             
-            $link.append($icon);
+            // $link.append($icon);
 
             $li.append($name);
             $li.append($descr)
             $li.append($link);
-            if(el.isDone){$displayDone.append($li)}else{$displayUndone.append($li); }            
+            if(el.isDone) {
+                $displayDone.append($li);
+                $displayDone.find("a").append($icon);
+            }else {
+                $displayUndone.append($li);
+                $displayUndone.find("a").append($icon);
+            }            
         });
     });
     

@@ -24,22 +24,22 @@
     margin-bottom: 0;
 }
 
-.item {
+li {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.item > h3 {
+li > h3 {
     font-size: 30px;
 }
 
-.item > p {
+li > p {
     font-size: 20px;
 }
 
-.item > a {
+li > a {
     color: white;
 }
 
