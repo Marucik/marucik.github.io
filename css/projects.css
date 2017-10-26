@@ -43,6 +43,10 @@
     color: white;
 }
 
+li {
+    list-style-image: none;
+}
+
 i {
     -webkit-transition: color 300ms ease;
     -moz-transition: color 300ms ease;
