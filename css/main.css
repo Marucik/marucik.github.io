@@ -87,6 +87,48 @@ ul > li {
     /* font-weight: 700; */
 }
 
+.circle {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: .5rem;
+    color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, white 50%, transparent 50%);
+    -webkit-transition: background-position 300ms, color 300ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease;
+    -o-transition: background-position 300ms, color 300ms ease;
+    transition: background-position 300ms, color 300ms ease;
+}
+
+.circle:hover {
+    color: black;
+    background-image: 
+    linear-gradient(to top, white 51%, transparent 50%);
+    background-position: 0 100%;
+    cursor: pointer;
+}
+
+.expandCircle {
+    border-radius: 0;
+    color: black;
+    background-color: #fff;
+    height: 250px;
+    width: 400px;
+}
+
+.hide {
+    display: none;
+}
+
 ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
