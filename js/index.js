@@ -16,19 +16,25 @@ $('document').ready(() => {
         let url = "https://marucik.azurewebsites.net/api/message";
         let username = $('#username').val();
         let message = $('#message').val();
-        let data = {
+        let obj = {
             "username": username,
             "message": message
         };
+        var data = JSON.stringify(obj);
 
         console.log(data);
+        console.log(obj);
 
         var request = $.ajax({
             url:    url,
             type:   "post",
             data:   data,
-            // contentType: 'application/json',
             crossDomain: true,
+            "processData": false,
+            "headers": {
+                "content-type": "application/json",
+            },
+            // contentType: 'application/json',
             // dataType: 'json'
         });
         
