@@ -102,11 +102,11 @@ ul > li {
     align-items: center;
     background-size: 200% 200%;
     background-image: linear-gradient(to top, white 50%, transparent 50%);
-    -webkit-transition: background-position 300ms, color 300ms ease;
-    -moz-transition: background-position 300ms, color 300ms ease;
-    -ms-transition: background-position 300ms, color 300ms ease;
-    -o-transition: background-position 300ms, color 300ms ease;
-    transition: background-position 300ms, color 300ms ease;
+    -webkit-transition: background-position 300ms, color 300ms ease, border-radius 200ms ease;
+    -moz-transition: background-position 300ms, color 300ms ease, border-radius 200ms ease;
+    -ms-transition: background-position 300ms, color 300ms ease, border-radius 200ms ease;
+    -o-transition: background-position 300ms, color 300ms ease, border-radius 200ms ease;
+    transition: background-position 300ms, color 300ms ease, border-radius 200ms ease;
 }
 
 .circle:hover {
@@ -121,10 +121,35 @@ ul > li {
     border-radius: 0;
     color: black;
     background-color: #fff;
-    height: 250px;
-    width: 400px;
+    height: 320px;
+    width: 440px;
+    text-align: center;
+    /* padding: 1rem; */
 }
 
+.expandCircle input {
+    border: solid 1px grey;
+}
+
+.expandCircle textarea {
+    width: 100%;
+    resize: none;
+    border: solid 1px grey;
+}
+
+.expandCircle button {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border: inherit;
+    border: solid 1px grey;
+    font-family: inherit;
+    padding: .1rem;
+}
+
+.expandCircle button:hover {
+    cursor: pointer;
+}
 .hide {
     display: none;
 }
