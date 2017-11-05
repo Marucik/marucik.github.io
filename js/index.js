@@ -24,26 +24,12 @@ $('document').ready(() => {
         console.log(data);
 
         var request = $.ajax({
-            // url:    url,
-            // type:   "post",
-            // data:   data,
-            // // contentType: 'application/json',
-            // crossDomain: true,
-            // "headers": {
-            //     "content-type": "application/json",
-            // }
-            // // dataType: 'json'
-            "async": true,
-            "crossDomain": true,
-            "url": url,
-            "method": "POST",
-            "headers": {
-              "content-type": "application/json",
-            //   "cache-control": "no-cache",
-            //   "postman-token": "0a5d155a-ae87-4638-ae3e-0d51f0a5773d"
-            },
-            "processData": false,
-            "data": data
+            url:    url,
+            type:   "post",
+            data:   data,
+            // contentType: 'application/json',
+            crossDomain: true,
+            // dataType: 'json'
         });
         
         request.done((response, textStatus, jqXHR) => {
