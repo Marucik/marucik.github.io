@@ -1,6 +1,6 @@
 $('document').ready(() => {
 
-    let url = "https://marucik.azurewebsites.net/api/tech";
+    let url = "https://portfolio-db.herokuapp.com/api/tech";
     
     var request = $.ajax({
         url:    url,
