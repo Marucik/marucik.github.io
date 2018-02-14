@@ -1,7 +1,7 @@
 $('document').ready(() => {
     var $display = $('#displayData');
 
-    let url = "https://marucik.azurewebsites.net/api/contact";
+    let url = "https://portfolio-db.herokuapp.com/api/contact";
     
     var request = $.ajax({
         url:    url,
