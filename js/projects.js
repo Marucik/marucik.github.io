@@ -14,6 +14,8 @@ $('document').ready(() => {
     request.done((response, textStatus, jqXHR) => {
         console.log("connected");
         console.log(response);
+        var $icon = ('<i class="fa fa-github-square fa-5x" aria-hidden="true"></i>');
+        
         response.forEach((el, index, array) => {
             var $li = $('<li>');
             var $name = $('<h3>', {
@@ -23,7 +25,7 @@ $('document').ready(() => {
                 text: el.description
             });
             var $link = $('<a href="' + el.link + '" target="_blank">');
-            var $icon = ('<i class="fa fa-github-square fa-5x" aria-hidden="true"></i>');
+            
             
             // $link.append($icon);
 
