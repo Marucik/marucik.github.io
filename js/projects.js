@@ -2,7 +2,7 @@ $('document').ready(() => {
     var $displayDone = $('#done');
     var $displayUndone = $('#unDone');
 
-    let url = "https://marucik.azurewebsites.net/api/projects";
+    let url = "https://portfolio-db.herokuapp.com/api/projects";
     
     var request = $.ajax({
         url:    url,
