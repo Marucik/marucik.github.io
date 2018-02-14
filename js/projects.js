@@ -13,9 +13,8 @@ $('document').ready(() => {
     
     request.done((response, textStatus, jqXHR) => {
         console.log("connected");
-        console.log(response);
-        var $icon = ('<i class="fa fa-github-square fa-5x" aria-hidden="true"></i>');
-        
+        console.log(response);       
+
         response.forEach((el, index, array) => {
             var $li = $('<li>');
             var $name = $('<h3>', {
@@ -24,20 +23,19 @@ $('document').ready(() => {
             var $descr = $('<p>', {
                 text: el.description
             });
-            var $link = $('<a href="' + el.link + '" target="_blank">');
-            
-            
-            // $link.append($icon);
+            var $link = $(`<a id="${index}" href="${el.link}" target="_blank">`);
+            var $icon = ('<i class="fa fa-github-square fa-5x" aria-hidden="true"></i>');
 
             $li.append($name);
-            $li.append($descr)
+            $li.append($descr);
             $li.append($link);
+            var finder = "#" + index;
             if(el.isDone) {
                 $displayDone.append($li);
-                $displayDone.find("a").append($icon);
+                $displayDone.find(finder).append($icon);
             }else {
                 $displayUndone.append($li);
-                $displayUndone.find("a").append($icon);
+                $displayUndone.find(finder).append($icon);
             }            
         });
     });
