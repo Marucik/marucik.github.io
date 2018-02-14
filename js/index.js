@@ -13,7 +13,7 @@ $('document').ready(() => {
 
     $('#send').click((e) => {
         e.preventDefault();
-        let url = "https://marucik.azurewebsites.net/api/message";
+        let url = "https://portfolio-db.herokuapp.com/api/message";
         let username = $('#username').val();
         let message = $('#message').val();
         let obj = {
