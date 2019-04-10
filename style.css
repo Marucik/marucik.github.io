@@ -2,19 +2,20 @@
 
 * {
   font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   overflow: hidden;
+  margin: 0;
 }
 
 main {
   height: 100vh;
   width: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   background: radial-gradient(
       600.25px at 0% 100%,
       rgba(255, 0, 0, 0.15) 0%,
@@ -28,10 +29,18 @@ main {
     #000000;
 }
 
+.container {
+  display: flex;
+  flex-flow: row;
+  height: 70%;
+}
+
 .logo {
-  grid-area: logo;
+  display: flex;
   color: white;
-  place-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
   padding: 2.5rem;
 
 }
@@ -41,32 +50,34 @@ main {
 }
 
 .content {
-  grid-area: content;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   color: white;
-  place-self: center;
   padding: 2.5rem;
+  font-size: 1.2rem;
+  width: 80%;
 }
 
 .content > p {
   text-align: right;
 }
 
-.footer {
+footer {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
-  width: 80%;
-  grid-area: footer;
+  align-items: center;
+  width: 100%;
+  height: 30%;
   color: white;
-  place-self: center start;
 }
 
 .buttonsContainer {
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-flow: row;
-  align-self: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .button {
@@ -77,13 +88,4 @@ main {
   min-width: 220px;
   padding: 1.3rem;
   width: 270px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 40% auto;
-  grid-template-rows: 70vh 28vh;
-  grid-template-areas: 
-    "logo content"
-    "footer footer";
 }
