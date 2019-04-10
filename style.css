@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  background: radial-gradient(
+      600.25px at 0% 100%,
+      rgba(255, 0, 0, 0.15) 0%,
+      rgba(255, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      600.52px at 100% 0%,
+      rgba(0, 102, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #000000;
+}
+
+.logo {
+  grid-area: logo;
+  color: white;
+  place-self: center;
+  padding: 2.5rem;
+
+}
+
+.logoImg {
+  width: 100%;
+}
+
+.content {
+  grid-area: content;
+  color: white;
+  place-self: center;
+  padding: 2.5rem;
+}
+
+.content > p {
+  text-align: right;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  width: 80%;
+  grid-area: footer;
+  color: white;
+  place-self: center start;
+}
+
+.buttonsContainer {
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+  align-self: flex-end;
+  justify-content: space-between;
+}
+
+.button {
+  background: transparent;
+  border: solid 4px #fff;
+  color: white;
+  font-size: 2rem;
+  min-width: 220px;
+  padding: 1.3rem;
+  width: 270px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 70vh 28vh;
+  grid-template-areas: 
+    "logo content"
+    "footer footer";
+}
