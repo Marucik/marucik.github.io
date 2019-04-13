@@ -88,4 +88,11 @@ footer {
   min-width: 220px;
   padding: 1.3rem;
   width: 270px;
+  transition: transform 500ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: transform 300ms ease-in;
 }
