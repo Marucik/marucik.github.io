@@ -4,33 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/glider.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Marcin Rakoczy</title>
 </head>
 <body>
   <main>
     <div class="container">
       <div class="logo">
-        <button class="logoButton">
+        <button class="logoButton contentChanger">
           <img class="logoImg" src="https://i.imgur.com/zZEsYDCg.png" alt="logo">
         </button>
       </div>
       <div class="contentContainer">
-        <div class="content introParagraph visible">
+        <div class="content introParagraph contentVisibility">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus ultricies metus at lacinia. In vitae felis
-            faucibus, aliquet mauris eget, interdum sem. In consectetur dolor vel elit commodo, ut lobortis sem placerat.
-            Praesent a consectetur tortor, in facilisis magna. Nulla tincidunt imperdiet porta. Integer non nisi ac metus
-            consectetur viverra. Ut ut tellus pharetra, ultrices velit sed, congue enim. Praesent finibus, urna quis
-            ultricies cursus, lacus leo porta sem, quis ornare orci lacus sed sem.
-          </p><p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus ultricies metus at lacinia. In vitae felis
-            faucibus, aliquet mauris eget, interdum sem. In consectetur dolor vel elit commodo, ut lobortis sem placerat.
-            Praesent a consectetur tortor, in facilisis magna. Nulla tincidunt imperdiet porta. Integer non nisi ac metus
-            consectetur viverra. Ut ut tellus pharetra, ultrices velit sed, congue enim. Praesent finibus, urna quis
-            ultricies cursus, lacus leo porta sem, quis ornare orci lacus sed sem.
-          </p><p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus ultricies metus at lacinia. In vitae felis
             faucibus, aliquet mauris eget, interdum sem. In consectetur dolor vel elit commodo, ut lobortis sem placerat.
             Praesent a consectetur tortor, in facilisis magna. Nulla tincidunt imperdiet porta. Integer non nisi ac metus
@@ -48,20 +39,29 @@
           </p>
         </div>
         <div class="content technologiesList"></div>
-        <div class="content projectsList"></div>
+        <div class="content projectsList">
+          <div class="glider-contain">
+            <div class="glider">
+            </div>
+          
+            <button role="button" aria-label="Previous" class="glider-prev">«</button>
+            <button role="button" aria-label="Next" class="glider-next">»</button>
+          </div>
+        </div>
         <div class="content contact"></div>
       </div>
     </div>
     <footer>
       <div class="buttonsContainer">
-        <button class="button">Technologies</button>
-        <button class="button">Projects</button>
-        <button class="button">Contact</button>
+        <button class="button contentChanger">Technologies</button>
+        <button class="button contentChanger">Projects</button>
+        <button class="button contentChanger">Contact</button>
       </div>
     </footer>
   </main>
+  <script src="js/glider.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contentFill.js"></script>
 </body>
-<script src="data.js"></script>
-<script src="main.js"></script>
-<script src="contentFill.js"></script>
 </html>

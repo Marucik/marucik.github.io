@@ -3,38 +3,32 @@ var data = {
         {
             "name": "Ułatwiaczek",
             "description": "Aplikacja ułatwiająca liczenie łatwości sprawdzianów",
-            "link": "https://github.com/Marucik/Ulatwiaczek",
-            "isDone": true
+            "link": "https://github.com/Marucik/Ulatwiaczek"
         },
         {
             "name": "Absolwenci.PRO",
             "description": "Baza danych absolwentów szkoły",
-            "link": "https://github.com/Dawiducik/Absolwenci.pro",
-            "isDone": true
+            "link": "https://github.com/Dawiducik/Absolwenci.pro"
         },
         {
             "name": "Vue_XO",
             "description": "Prosta gra w kółko i krzyżyk oparta na Vue i socketach",
-            "link": "https://marucik.github.io/vue_XO/",
-            "isDone": true
+            "link": "https://marucik.github.io/vue_XO/"
         },
         {
             "name": "JS-calculator",
             "description": "Kalkulator prosty",
-            "link": "https://marucik.github.io/JS-calculator/",
-            "isDone": true
+            "link": "https://marucik.github.io/JS-calculator/"
         },
         {
             "name": "JS-ASCII-Clock",
             "description": "Zegarek w stylu ASCI-art",
-            "link": "https://marucik.github.io/JS-ASCII-Clock/",
-            "isDone": true
+            "link": "https://marucik.github.io/JS-ASCII-Clock/"
         },
         {
             "name": "JS-ASCII-Clock",
             "description": "Zegarek w stylu ASCI-art",
-            "link": "https://marucik.github.io/JS-ASCII-Clock/",
-            "isDone": true
+            "link": "https://marucik.github.io/JS-ASCII-Clock/"
         }
     ],
     "tech": {
@@ -90,7 +84,7 @@ var data = {
             }
         ]
     },
-"contact": [
+    "contact": [
         {
             "name": "Email",
             "value": "Rakoczymarcin@outlook.com"
