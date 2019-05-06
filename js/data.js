@@ -31,63 +31,39 @@ var data = {
             "link": "https://marucik.github.io/JS-ASCII-Clock/"
         }
     ],
-    "tech": {
-        "planing": [
-            {
-                "name": "C#",
-                "description": "poziom wyższy niż podstawowy"
-            },
-            {
-                "name": "C++",
-                "description": "poziom wyższy niż podstawowy"
-            }
-        ],
-        "inProgress": [
-            {
-                "name": "React",
-                "description": ""
-            }
-        ],
-        "learnt": [
-            {
-                "name": "JavaScript",
-                "description": "Med"
-            },
-            {
-                "name": "HTML 5",
-                "description": "High"
-            },
-            {
-                "name": "CSS 3",
-                "description": "High"
-
-            },
-            {
-                "name": "PHP",
-                "description": "Med"
-            },
-            {
-                "name": "SQL",
-                "description": "Med"
-            },
-            {
-                "name": "C++",
-                "description": "Beg"
-            },
-            {
-                "name": "C#",
-                "description": "Beg"
-            },
-            {
-                "name": "Node.js",
-                "description": "Med"
-            }
-        ]
-    },
-    "contact": [
+    "tech": [
         {
-            "name": "Email",
-            "value": "Rakoczymarcin@outlook.com"
+            "name": "JavaScript",
+            "level": "Medium"
+        },
+        {
+            "name": "HTML 5",
+            "level": "Medium"
+        },
+        {
+            "name": "CSS 3",
+            "level": "Medium"
+
+        },
+        {
+            "name": "PHP",
+            "level": "Begginer"
+        },
+        {
+            "name": "SQL",
+            "level": "Medium"
+        },
+        {
+            "name": "C++",
+            "level": "Begginer"
+        },
+        {
+            "name": "C#",
+            "level": "Begginer"
+        },
+        {
+            "name": "Node.js",
+            "level": "Medium"
         }
     ]
 }

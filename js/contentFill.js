@@ -1,5 +1,6 @@
 let content = data;
 let gliderElement = document.querySelector('.glider-track');
+let techContainerElement = document.querySelector('.technologiesContainer');
 
 for (let i = 0; i < content.projects.length; i++) {
   let object = content.projects[i];
@@ -33,4 +34,22 @@ for (let i = 0; i < content.projects.length; i++) {
   card.appendChild(description);
 
   gliderElement.appendChild(card);
+}
+
+for (let i = 0; i < content.tech.length; i++) {
+  const object = content.tech[i];
+
+  let block = document.createElement('div');
+  block.classList.add('techBlock');
+
+  let name = document.createElement('p');
+  name.textContent = object.name;
+
+  let level = document.createElement('p');
+  level.textContent = object.level;
+
+  block.appendChild(name);
+  block.appendChild(level);
+
+  techContainerElement.appendChild(block);
 }
