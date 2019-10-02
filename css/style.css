@@ -6,12 +6,12 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
 }
 
 main {
-  height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -40,7 +40,7 @@ button:focus {
 .container {
   display: flex;
   flex-flow: row;
-  height: 70%;
+  min-height: 70vh;
 }
 
 .logo {
@@ -51,7 +51,7 @@ button:focus {
   width: 45%;
   padding: 2.5rem;
   -webkit-animation: flicker-in-1 1s ease-in-out both;
-        animation: flicker-in-1 1s ease-in-out both;
+  animation: flicker-in-1 1s ease-in-out both;
 }
 
 .logoButton {
@@ -82,8 +82,8 @@ button:focus {
 
 .contentVisibility {
   display: flex;
-	-webkit-animation: flicker-in-1 1s ease-in-out both;
-	        animation: flicker-in-1 1s ease-in-out both;
+  -webkit-animation: flicker-in-1 1s ease-in-out both;
+  animation: flicker-in-1 1s ease-in-out both;
 }
 
 .introParagraph {
@@ -103,7 +103,7 @@ button:focus {
   border: 2px white solid;
 }
 
-.techBlock  p {
+.techBlock p {
   margin: 0.5rem 0;
   text-align: center;
 }
@@ -128,10 +128,10 @@ footer {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 30%;
+  height: 30vh;
   color: white;
   -webkit-animation: flicker-in-1 1s ease-in-out both;
-        animation: flicker-in-1 1s ease-in-out both;
+  animation: flicker-in-1 1s ease-in-out both;
 }
 
 .buttonsContainer {
@@ -146,13 +146,13 @@ footer {
   border: solid 4px #fff;
   color: white;
   font-size: 2rem;
-  min-width: 220px;
+  width: 220px;
   padding: 1.3rem;
   width: 270px;
 }
 
 .contentChanger {
-    transition: transform 500ms ease-out;
+  transition: transform 500ms ease-out;
 }
 
 .contentChanger:hover {
@@ -169,16 +169,64 @@ a > .fab {
   padding-left: 1rem;
   color: white;
   transition: transform 500ms ease-out;
-
 }
 
-a:hover > .fab  {
+a:hover > .fab {
   transform: translateY(-2px);
   transition: transform 300ms ease-in;
 }
 
 a:visited > .fab {
   color: white;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .logo {
+    padding: 2rem 0 0 0;
+  }
+
+  .buttonsContainer {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .contentContainer {
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .introParagraph {
+    text-align: center;
+  }
+
+  .techBlock {
+    margin: 1rem;
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    border: 2px white solid;
+  }
+
+  .technologiesContainer {
+    justify-content: center;
+  }
+
+  .content {
+    margin: 2rem 0;
+  }
+
+  .contact > h3 {
+    font-size: 1.2rem;
+    text-indent: 0;
+  }
 }
 
 /* ----------------------------------------------

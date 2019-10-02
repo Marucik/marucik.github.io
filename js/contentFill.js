@@ -16,12 +16,12 @@ for (let i = 0; i < content.projects.length; i++) {
   let href = document.createAttribute('href');
   let target = document.createAttribute('target');
   href.value = object.link;
-  target.value = "_blank";
+  target.value = '_blank';
   link.setAttributeNode(href);
   link.setAttributeNode(target);
 
   let icon = document.createElement('i');
-  icon.classList.add("fab", "fa-github-alt", "fa-2x");
+  icon.classList.add('fab', 'fa-github-alt', 'fa-2x');
 
   let description = document.createElement('p');
   description.classList.add('textCenter');
