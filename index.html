@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">    
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>M.R | Portfolio</title>
-</head>
-<body>
-    <div class="flex topBar">
-        <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
-        <img src="img/logo.svg" alt="logo" class="logo">
-    </div>
-    <div class="main flex">
-        <div class="content">
-            <div class="greating">
-                <h2>No witam</h2>
-                <h4>Nazywam się Marcin i pretenduję do bycia webdeveloperem,</h4>
-                <h4>a to moje portfolio</h4>
-                <h4>Sprawdź co mam do zaoferowania:</h4>
-            </div>
-            <div class="tilesWraper">
-                <button class="tile"><a href="projects.html">Projekty</a></button>
-                <button class="tile"><a href="tech.html">Technologie</a></button>
-                <button class="tile"><a href="contact.html">Kontakt</a></button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/glider.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Marcin Rakoczy</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo">
+          <button class="logoButton contentChanger">
+            <img class="logoImg" src="./img/logo.png" alt="logo" />
+          </button>
         </div>
-    </div>
+        <div class="contentContainer">
+          <div class="content introParagraph contentVisibility">
+            <h1>Welcome!</h1>
+            <h2>My name is Marcin and this is my personal portfolio.</h2>
+            <p>
+              Feel free to explore my projects and familiarize yourself with the
+              technologies that I use on a daily basis or I have ever learned.
+            </p>
+          </div>
+          <div class="content technologiesContainer"></div>
+          <div class="content projectsCarousel">
+            <div class="glider-contain">
+              <div class="glider"></div>
 
-<div id="circle" class="circle">
-    <i class="fa fa-commenting-o formIcon" aria-hidden="true"></i>
-    <form class="hide contactForm">
-        <label for="usernema">Imię i nazwisko:</label><br>
-        <input type="text" name="username" id="username"><br><br>
-        <label for="message">Wiadomość:</label><br>
-        <textarea name="message" id="message" cols="20" rows="10"></textarea><br>
-        <button id="send">Wyślij!</button>
-    </form>
-</div>
-
-<a href="http://1041uuu.tumblr.com/" target="_blank" class="credits">Art by 1041uuu</a>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/index.js"></script>
-</body>
+              <button role="button" aria-label="Previous" class="glider-prev">
+                «
+              </button>
+              <button role="button" aria-label="Next" class="glider-next">
+                »
+              </button>
+            </div>
+          </div>
+          <div class="content contact">
+            <h2>Email:</h2>
+            <h3>rakoczymarcin@outlook.com</h3>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="buttonsContainer">
+          <button class="button contentChanger">Technologies</button>
+          <button class="button contentChanger">Projects</button>
+          <button class="button contentChanger">Contact</button>
+        </div>
+      </footer>
+    </main>
+    <script src="js/glider.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contentFill.js"></script>
+  </body>
 </html>
