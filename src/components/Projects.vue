@@ -39,14 +39,10 @@ export default {
   data() {
     return {
       projects: object.projects,
-      next: this.$refs.next
+      window: {
+        width: 0
+      }
     };
-  },
-  props: {
-    itemNumber: {
-      type: Number,
-      default: 2
-    }
   },
   components: {
     TinySlider
@@ -57,6 +53,25 @@ export default {
     },
     prevSlide() {
       this.$refs.tinySlider.slider.goTo("prev");
+    },
+    handleResize() {
+      this.window.width = window.innerWidth;
+    }
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  computed: {
+    itemNumber() {
+      if (this.window.width >= 1080) {
+        return 2;
+      } else {
+        return 1;
+      }
     }
   }
 };

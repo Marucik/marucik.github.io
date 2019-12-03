@@ -1,32 +1,36 @@
 <template>
   <div class="home">
-    <main>
-      <div class="container">
-        <div class="logo">
-          <button
-            @click="currentTab = 'Intro'"
-            class="logoButton contentChanger"
-          >
-            <img class="logoImg" src="@/assets/img/logo.png" alt="logo" />
-          </button>
-        </div>
-        <div class="contentContainer">
-          <component :is="currentTab" class="contentVisibility"></component>
-        </div>
+    <div class="container">
+      <div class="logo">
+        <button @click="currentTab = 'Intro'" class="logoButton contentChanger">
+          <img class="logoImg" src="@/assets/img/logo.png" alt="logo" />
+        </button>
       </div>
-      <footer>
-        <div class="buttonsContainer">
-          <button
-            v-for="tab in tabs"
-            :key="tab"
-            @click="currentTab = tab"
-            class="button contentChanger"
-          >
-            {{ tab }}
-          </button>
-        </div>
-      </footer>
-    </main>
+      <div v-if="isDesktop" class="contentContainer">
+        <component :is="currentTab" class="contentVisibility"></component>
+      </div>
+      <div v-else class="contentContainer">
+        <Intro />
+        <component
+          v-for="tab in tabs"
+          :key="tab"
+          :is="tab"
+          class="contentVisibility"
+        ></component>
+      </div>
+    </div>
+    <footer v-if="isDesktop">
+      <div class="buttonsContainer">
+        <button
+          v-for="tab in tabs"
+          :key="tab"
+          @click="currentTab = tab"
+          class="button contentChanger"
+        >
+          {{ tab }}
+        </button>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -47,15 +51,38 @@ export default {
   data() {
     return {
       currentTab: "Intro",
-      tabs: ["Technologies", "Projects", "Contact"]
+      tabs: ["Technologies", "Projects", "Contact"],
+      window: {
+        width: 0
+      }
     };
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.window.width = window.innerWidth;
+    }
+  },
+  computed: {
+    isDesktop() {
+      if (this.window.width >= 1080) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
 
 <style lang="scss">
-main {
-  /* min-height: 100vh; */
+.home {
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -85,6 +112,10 @@ button:focus {
   display: flex;
   flex-flow: row;
   min-height: 70vh;
+  @media screen and (max-width: 1080px) {
+    flex-flow: column;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -96,6 +127,9 @@ button:focus {
   padding: 2.5rem;
   -webkit-animation: flicker-in-1 1s ease-in-out both;
   animation: flicker-in-1 1s ease-in-out both;
+  @media screen and (max-width: 1080px) {
+    padding: 2rem 0 0 0;
+  }
 }
 
 .logoButton {
@@ -129,6 +163,9 @@ button:focus {
 .introParagraph {
   text-align: right;
   flex-flow: column;
+  @media screen and (max-width: 1080px) {
+    text-align: center;
+  }
 }
 
 .contact {
@@ -183,23 +220,14 @@ footer {
   transition: transform 300ms ease-in;
 }
 
+.content {
+  @media screen and (max-width: 1080px) {
+    margin: 2rem 0;
+    justify-content: center;
+  }
+}
+
 .textCenter {
   text-align: center;
-}
-
-a > .fab {
-  vertical-align: middle;
-  padding-left: 1rem;
-  color: white;
-  transition: transform 500ms ease-out;
-}
-
-a:hover > .fab {
-  transform: translateY(-2px);
-  transition: transform 300ms ease-in;
-}
-
-a:visited > .fab {
-  color: white;
 }
 </style>
