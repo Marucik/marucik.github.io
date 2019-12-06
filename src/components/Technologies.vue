@@ -1,7 +1,10 @@
 <template>
   <div class="content technologiesContainer">
-    <div v-for="name in technologies" :key="name" class="techBlock">
-      <p>{{ name }}</p>
+    <h2>I work with:</h2>
+    <div class="blocksContainer">
+      <div v-for="name in technologies" :key="name" class="techBlock">
+        <p>{{ name }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -20,6 +23,11 @@ export default {
 
 <style lang="scss">
 .technologiesContainer {
+  flex-flow: column;
+}
+
+.blocksContainer {
+  display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -32,7 +40,6 @@ export default {
   justify-content: center;
   margin: 1rem;
   width: calc(100% / 5);
-  height: calc(100% / 4);
   border: 2px white solid;
   @media screen and (max-width: 1080px) {
     width: calc(100% / 3);
@@ -41,5 +48,6 @@ export default {
 
 .techBlock p {
   text-align: center;
+  margin: calc(100% / 14) 0;
 }
 </style>

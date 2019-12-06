@@ -1,5 +1,5 @@
 <template>
-  <div class="content introParagraph contentVisibility">
+  <div class="content introParagraph">
     <h1>Welcome!</h1>
     <h2>My name is Marcin and this is my personal portfolio.</h2>
     <p>

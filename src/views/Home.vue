@@ -7,7 +7,7 @@
         </button>
       </div>
       <div v-if="isDesktop" class="contentContainer">
-        <component :is="currentTab" class="contentVisibility"></component>
+        <component :is="currentTab" class="animation"></component>
       </div>
       <div v-else class="contentContainer">
         <Intro />
@@ -15,7 +15,7 @@
           v-for="tab in tabs"
           :key="tab"
           :is="tab"
-          class="contentVisibility"
+          class="animation"
         ></component>
       </div>
     </div>
@@ -158,8 +158,7 @@ button:focus {
   }
 }
 
-.contentVisibility {
-  display: flex;
+.animation {
   -webkit-animation: flicker-in-1 1s ease-in-out both;
   animation: flicker-in-1 1s ease-in-out both;
 }
@@ -211,6 +210,7 @@ footer {
 }
 
 .content {
+  display: flex;
   @media screen and (max-width: 1080px) {
     margin: 2rem 0;
     justify-content: center;
