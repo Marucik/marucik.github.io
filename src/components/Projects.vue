@@ -96,4 +96,10 @@ export default {
   background: none;
   border: none;
 }
+
+.tns-outer {
+  @media screen and (max-width: 1080px) {
+    width: 80%;
+  }
+}
 </style>

@@ -152,6 +152,10 @@ button:focus {
   font-size: 1.2rem;
   min-width: 65%;
   max-width: 65%;
+  @media screen and (max-width: 1080px) {
+    padding: 0.2rem;
+    max-width: 90%;
+  }
 }
 
 .contentVisibility {
@@ -166,20 +170,6 @@ button:focus {
   @media screen and (max-width: 1080px) {
     text-align: center;
   }
-}
-
-.contact {
-  flex-flow: column;
-}
-
-.contact > h2 {
-  font-size: 3rem;
-}
-
-.contact > h3 {
-  font-size: 2rem;
-  margin: 0;
-  text-indent: 4rem;
 }
 
 footer {

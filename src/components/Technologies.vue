@@ -34,6 +34,9 @@ export default {
   width: calc(100% / 5);
   height: calc(100% / 4);
   border: 2px white solid;
+  @media screen and (max-width: 1080px) {
+    width: calc(100% / 3);
+  }
 }
 
 .techBlock p {
