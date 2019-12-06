@@ -90,6 +90,13 @@ export default {
 .slider {
   display: flex;
   flex-flow: row;
+  align-self: center;
+  @media screen and (max-width: 375px) {
+    align-self: flex-start;
+  }
+  @media screen and (max-width: 1080px) {
+    width: 90%;
+  }
 }
 
 .inline {
@@ -107,11 +114,14 @@ export default {
   color: white;
   background: none;
   border: none;
+  @media screen and (max-width: 1080px) {
+    font-size: 1rem;
+  }
 }
 
 .tns-outer {
   @media screen and (max-width: 1080px) {
-    width: 80%;
+    width: 90%;
   }
 }
 </style>

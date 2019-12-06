@@ -42,7 +42,7 @@ export default {
   width: calc(100% / 5);
   border: 2px white solid;
   @media screen and (max-width: 1080px) {
-    width: calc(100% / 3);
+    width: calc(100% / 2.7);
   }
 }
 
